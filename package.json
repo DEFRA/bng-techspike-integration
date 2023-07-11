@@ -1,8 +1,8 @@
 {
-  "name": "ffc-template-node",
+  "name": "bng-techspike-integration",
   "version": "0.1.0",
-  "description": "description-of-project-goes-here",
-  "homepage": "https://github.com/DEFRA/ffc-template-node",
+  "description": "Tech spike to demonstrate use of MS Dynamics API",
+  "homepage": "https://github.com/DEFRA/bng-techspike-integration",
   "main": "app/index.js",
   "scripts": {
     "pretest": "npm run test:lint",
