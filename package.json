@@ -17,8 +17,11 @@
   "contributors": [],
   "license": "OGL-UK-3.0",
   "dependencies": {
+    "@azure/msal-node": "^1.18.0",
     "@hapi/hapi": "20.2.2",
-    "applicationinsights": "2.3.5"
+    "@hapi/wreck": "^18.0.1",
+    "applicationinsights": "2.3.5",
+    "dynamics-web-api": "^1.7.10"
   },
   "devDependencies": {
     "jest": "29.2.2",
