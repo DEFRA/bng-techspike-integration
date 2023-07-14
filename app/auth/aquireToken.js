@@ -1,18 +1,19 @@
 const msal = require('@azure/msal-node')
+const config = require('../config')
 
 const clientConfig = {
   auth: {
-    clientId: process.env.Dynamics365ClientId,
-    authority: process.env.Dynamics365AuthorityURL
+    clientId: config.clientId,
+    authority: config.authorityUrl
   }
 }
 
 const context = new msal.PublicClientApplication(clientConfig)
 
 const request = {
-  username: process.env.Dynamics365UserName,
-  password: process.env.Dynamics365Password,
-  scopes: [ `${process.env.Dynamics365ServerUrl}/.default` ]
+  username: config.dynamicsUsername,
+  password: config.dynamicsPassword,
+  scopes: [ `${config.dynamicsBaseUrl}/.default` ]
 }
 
 const acquireToken = (dynamicsWebApiCallback) => {

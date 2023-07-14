@@ -21,7 +21,9 @@
     "@hapi/hapi": "20.2.2",
     "@hapi/wreck": "^18.0.1",
     "applicationinsights": "2.3.5",
-    "dynamics-web-api": "^1.7.10"
+    "dotenv": "^16.3.1",
+    "dynamics-web-api": "^1.7.10",
+    "joi": "^17.9.2"
   },
   "devDependencies": {
     "jest": "29.2.2",
