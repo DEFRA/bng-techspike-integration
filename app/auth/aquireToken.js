@@ -4,20 +4,19 @@ const config = require('../config')
 const clientConfig = {
   auth: {
     clientId: config.clientId,
+    clientSecret: config.clientSecret,
     authority: config.authorityUrl
   }
 }
 
-const context = new msal.PublicClientApplication(clientConfig)
+const context = new msal.ConfidentialClientApplication(clientConfig)
 
 const request = {
-  username: config.dynamicsUsername,
-  password: config.dynamicsPassword,
   scopes: [ `${config.dynamicsBaseUrl}/.default` ]
 }
 
 const acquireToken = (dynamicsWebApiCallback) => {
-  context.acquireTokenByUsernamePassword(request).then(response => {
+  context.acquireTokenByClientCredential(request).then(response => {
     dynamicsWebApiCallback(response.accessToken)
   }).catch(error => {
     console.log(error)
