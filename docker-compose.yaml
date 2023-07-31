@@ -8,3 +8,7 @@ services:
     environment:
       APPINSIGHTS_CLOUDROLE: bng-techspike-integration-local
       APPINSIGHTS_CONNECTIONSTRING: ${APPINSIGHTS_CONNECTIONSTRING}
+      Dynamics365ClientId: ${Dynamics365ClientId}
+      Dynamics365ClientSecret: ${Dynamics365ClientSecret}
+      Dynamics365AuthorityURL: ${Dynamics365AuthorityURL}
+      Dynamics365ServerUrl: ${Dynamics365ServerUrl}

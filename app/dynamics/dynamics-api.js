@@ -4,7 +4,8 @@ const { acquireToken } = require('../auth/aquireToken')
 
 const dynamicsWebApi = new DynamicsWebAPI({
   webApiUrl: config.dynamicsBaseUrl + '/api/data/v9.2/',
-  onTokenRefresh: acquireToken
+  onTokenRefresh: acquireToken,
+  useEntityNames: true
 })
 
 module.exports = dynamicsWebApi
