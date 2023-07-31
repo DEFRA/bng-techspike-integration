@@ -17,7 +17,9 @@ const routes = [].concat(
   require('./routes/dynamics/developer/registration'),
   require('./routes/dynamics/gainsite/application'),
   require('./routes/dynamics/gainsite/case'),
-  require('./routes/dynamics/gainsite/other-landowner')
+  require('./routes/dynamics/gainsite/other-landowner'),
+  require('./routes/dynamics/test-create'),
+  require('./routes/data'),
 )
 
 server.route(routes)

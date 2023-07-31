@@ -5,7 +5,6 @@ module.exports = {
   path: '/dynamics/WhoAmI',
   handler: async (request, h) => {
     const res = await dynamicsApi.executeUnboundFunction("WhoAmI")
-
     return h.response(res).code(200)
   }
 }

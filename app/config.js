@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('dotenv').config()
 const joi = require('joi')
 
 const schema = joi.object({

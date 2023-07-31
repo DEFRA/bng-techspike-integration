@@ -1,15 +1,10 @@
-const dynamicsApi = require('../../dynamics/dynamics-api')
+const get = require('../../dynamics')
 
 module.exports = {
   method: 'GET',
   path: '/dynamics/entities',
   handler: async (request, h) => {
-    const entityRequest = {
-      collection: 'entities'
-    }
-    
-    const res = await dynamicsApi.retrieveMultipleRequest(entityRequest)
-
+    const res = await get('entities')
     return h.response(res).code(200)
   }
 }

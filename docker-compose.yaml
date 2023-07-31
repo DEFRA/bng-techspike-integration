@@ -12,3 +12,9 @@ services:
       Dynamics365ClientSecret: ${Dynamics365ClientSecret}
       Dynamics365AuthorityURL: ${Dynamics365AuthorityURL}
       Dynamics365ServerUrl: ${Dynamics365ServerUrl}
+      POSTGRES_DB: bng
+      POSTGRES_HOST: ${POSTGRES_HOST:-host.docker.internal}
+      POSTGRES_PASSWORD: ${POSTGRES_SCHEMA_PASSWORD:-postgres}
+      POSTGRES_PORT: 5432
+      POSTGRES_SCHEMA_NAME: ${POSTGRES_SCHEMA_NAME:-public}
+      POSTGRES_USERNAME: ${POSTGRES_SCHEMA_USERNAME:-postgres}
