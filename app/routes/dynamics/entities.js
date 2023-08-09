@@ -1,4 +1,4 @@
-const get = require('../../dynamics')
+const { get } = require('../../dynamics')
 
 module.exports = {
   method: 'GET',

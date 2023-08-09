@@ -15,7 +15,8 @@ const schema = joi.object({
   bankDetailsEntity: joi.string().default('bng_bankdetails'),
   paymentDetailsEntity: joi.string().default('bng_paymentdetails'),
   caseEntity: joi.string().default('bng_gainsiteregistrationid'),
-  otherLandownerEntity: joi.string().default('bng_gainsitepropertylandowners')
+  otherLandownerEntity: joi.string().default('bng_gainsitepropertylandowners'),
+  leadEntity: joi.string().default('lead'),
 })
 
 const config = {
@@ -32,7 +33,8 @@ const config = {
   bankDetailsEntity: process.env.BankDetailsEntity,
   paymentDetailsEntity: process.env.PaymentDetailsEntity,
   caseEntity: process.env.CaseEntity,
-  otherLandownerEntity: process.env.OtherLandownerEntity
+  otherLandownerEntity: process.env.OtherLandownerEntity,
+  leadEntity: process.env.LeadEntity
 }
 
 const { error, value } = schema.validate(config, {

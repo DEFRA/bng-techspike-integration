@@ -1,4 +1,4 @@
-const get = require('../../dynamics')
+const { get } = require('../../dynamics')
 const config = require('../../config')
 
 module.exports = {

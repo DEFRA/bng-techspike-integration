@@ -19,6 +19,7 @@ const routes = [].concat(
   require('./routes/dynamics/gainsite/case'),
   require('./routes/dynamics/gainsite/other-landowner'),
   require('./routes/dynamics/test-create'),
+  require('./routes/dynamics/lead'),
   require('./routes/data'),
 )
 
